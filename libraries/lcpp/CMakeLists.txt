@@ -23,5 +23,8 @@ project("lcpp" VERSION 0.0
     LANGUAGES CXX
 )
 
-message("configuring ${CMAKE_PROJECT_NAME} library project")
-add_library(CMAKE_PROJECT_NAME)
+message("configuring ${PROJECT_NAME} library project")
+
+add_library(${PROJECT_NAME} SHARED)
+
+target_sources(${PROJECT_NAME} PRIVATE "src/tmp.cpp")
