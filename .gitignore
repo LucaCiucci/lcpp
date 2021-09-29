@@ -1,3 +1,7 @@
+################################################################
+#               Default GitHub CMake gitignore
+################################################################
+
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
@@ -7,3 +11,25 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+
+################################################################
+#                   Additional gitingores
+################################################################
+# (added by hand)
+
+################################
+#       Visual Studio
+################################
+
+# this is the default Visual Studio output folder if you directly open
+# the project as CMake folder
+out/
+
+# default Visual Studio user project configuration folder
+.vs/
+
+################################################################
+#                   Automatical gitingores
+################################################################
+# ignores automatically addad from Github Desktop or any other
+# git interface
