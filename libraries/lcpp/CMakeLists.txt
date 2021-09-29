@@ -6,7 +6,7 @@ LCPP_NOTICE_END ]]
 ################################################################
 #[[
 
-Top level CMake project, see README.md for info
+lcpp library folder, see ./README.md for info
 
 ]]
 
@@ -14,22 +14,14 @@ Top level CMake project, see README.md for info
 #                    basic configurations
 ################################################################
 
-cmake_minimum_required (VERSION 3.20)
-
 ################################################################
-#                        MAIN PROJECT
+#                          PROJECT
 ################################################################
-# main project definition
 
 project("lcpp" VERSION 0.0
-    DESCRIPTION "A set of tools aimed to simplify C++ scripting and scientific programming"
+    DESCRIPTION "lcpp main library project"
     LANGUAGES CXX
 )
 
-# add_subdirectory("cmake")
-
-################################
-#     SUBPROJECTS / SUBDIRS
-################################
-
-add_subdirectory("libraries")
+message("configuring ${CMAKE_PROJECT_NAME} library project")
+add_library(CMAKE_PROJECT_NAME)

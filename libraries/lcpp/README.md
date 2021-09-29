@@ -1,0 +1,4 @@
+<!-- LCPP_NOTICE_BEGIN
+LCPP_NOTICE_END -->
+
+# LCPP library
