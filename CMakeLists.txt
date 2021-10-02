@@ -25,6 +25,7 @@ project("lcpp" VERSION 0.0
     DESCRIPTION "A set of tools aimed to simplify C++ scripting and scientific programming"
     LANGUAGES CXX
 )
+message("configuring top level ${CMAKE_PROJECT_NAME} project")
 
 # add_subdirectory("cmake")
 
@@ -33,3 +34,4 @@ project("lcpp" VERSION 0.0
 ################################
 
 add_subdirectory("libraries")
+add_subdirectory("apps")
